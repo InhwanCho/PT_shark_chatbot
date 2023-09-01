@@ -1,6 +1,6 @@
 # PT_shark_chatbot
 
-프롬프트엔지니어링을 활용한 개인 운동 계획표 작성을 streamlit을 활용하여 챗봇으로 구현해봤습니다.
+`프롬프트엔지니어링`을 활용한 개인 운동 계획표 작성을 `streamlit`을 활용하여 `챗봇`으로 구현해봤습니다.
 
 <img width="800" alt="main page" src="https://github.com/InhwanCho/PT_shark_chatbot/assets/111936229/45038476-c374-4fcd-86cb-b5fbf5ba82ac">
 
