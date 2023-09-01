@@ -67,7 +67,7 @@ template = Template("""
 
 ## 실행 결과 2(계획표 수정하기)
 
-<img width="800" alt="발화에 의해 수정된 계획표" src="https://github.com/InhwanCho/PT_shark_chatbot/assets/111936229/613d6f0f-374f-4f11-a892-26bbd90218f7">
+<img width="600" alt="발화에 의해 수정된 계획표" src="https://github.com/InhwanCho/PT_shark_chatbot/assets/111936229/613d6f0f-374f-4f11-a892-26bbd90218f7">
 
 ## 실행 결과 3(맨몸운동으로 계획표 생성하기)
 
