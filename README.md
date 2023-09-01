@@ -1,10 +1,14 @@
 # PT_shark_chatbot
 
+프롬프트엔지니어링을 활용한 개인 운동 계획표 작성을 streamlit으로 구현해봤습니다.
+
+<img width="900" alt="main page" src="https://github.com/InhwanCho/PT_shark_chatbot/assets/111936229/45038476-c374-4fcd-86cb-b5fbf5ba82ac">
+
 ## 실행 방법
 
 1. 환경 설정
 ```python
-!pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 2. API KEY 설정
 
@@ -62,7 +66,7 @@ template = Template("""
 
 
 
-<img width="900" alt="main page" src="https://github.com/InhwanCho/PT_shark_chatbot/assets/111936229/45038476-c374-4fcd-86cb-b5fbf5ba82ac">
+
 
 <img width="900" alt="헬스 2주 플랜" src="https://github.com/InhwanCho/PT_shark_chatbot/assets/111936229/08371168-7f71-4f06-a0b3-bde043da05d3">
 
