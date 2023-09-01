@@ -81,7 +81,7 @@ def main():
     trainer = st.sidebar.radio('원하는 트레이닝 목적을 선택해주세요.', options=('무게증량','유연성 증가','재활운동','체형교정','체중감소','건강'))
 
     # LLM 모델 설정
-    chat = ChatOpenAI(temperature=0.1,max_tokens=2048,model='gpt-4')
+    chat = ChatOpenAI(temperature=0.1,max_tokens=1024,model='gpt-3.5-turbo')
     
     # 최종 출력을 위한 메시지 세션 활성화
     # GPT모델의 역할 부여 
