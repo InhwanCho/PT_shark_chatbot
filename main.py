@@ -34,8 +34,18 @@ def sidebar():
     experience = st.sidebar.number_input('운동 경력(년)을 입력해 주세요',value= 1)
     # 템플릿 설정
     template = Template("""
+                --- USER INFO ---
+            {키} : $height cm
+            {몸무게} : $weight kg
+            {성별} : $gender
+            {나이} : $age
+            {운동 경력} : $experience year
+            {운동} : $place
+            {운동 목적} : $trainer
+            {workout day} : $w_plan
+            
             --- INSTRUCTION ---
-            아래의 USER INFO를 바탕으로 계획표를 작성해줘
+            위의 USER INFO를 바탕으로 계획표를 작성해줘
             1.{workout day}이 아닌 요일은 '휴식'으로 작성해주세요 
             예를들어 월요일, 수요일이 {workout day}이라면 화요일,목요일,금요일,토요일,일요일은 {workout day}이 아닙니다.
             2.계획표는 markdown table 형식으로 작성해줘
@@ -45,17 +55,6 @@ def sidebar():
             6.만약 트레이닝 종목이 {맨몸운동}이면, calisthenics의 동작 2가지를 링크와 함께 알려줘
             7.계획표는 2주차까지만 작성해줘
             
-            
-
-            --- USER INFO ---
-            {키} : $height cm
-            {몸무게} : $weight kg
-            {성별} : $gender
-            {나이} : $age
-            {운동 경력} : $experience year
-            {운동} : $place
-            {운동 목적} : $trainer
-            {workout day} : $w_plan
 
             --- RESULT EXAMPLE ---
             트레이닝 종목 : 헬스
