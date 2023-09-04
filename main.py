@@ -163,13 +163,17 @@ def main():
             tools = load_tools(tool_names)
             agent = initialize_agent(tools, llm, agent="zero-shot-react-description", verbose=True)
             # 유저 질문
-            st.session_state.messages.append(query)
-            st.session_state.users.append('serpapi_user')
+            st.session_state.messages.append(HumanMessage(content=''))
+            st.session_state.users.append('serpapi_user:'+query)
+            
             with st.spinner("Thinking..."):
                 # serpapi 답변
                 response = agent.run(query)
-            st.session_state.messages.append(response)
-            st.session_state.users.append('serpapi_chatbot')
+                
+            st.session_state.messages.append(HumanMessage(content=''))
+            st.session_state.users.append('serpapi_chatbot:'+response)
+            
+            
 
             # # GPT 답변으로 변경 시
             # st.session_state.messages.append(HumanMessage(content=query))
@@ -193,9 +197,9 @@ def main():
         elif user == 'planner':
             st.markdown(msg.content)
         elif user == 'serpapi_user':
-            message(msg, is_user = True, key=str(i)+'_user')
+            message('Googling : ' + user[13:], is_user = True, key=str(i)+'_user')
         elif user == 'serpapi_chatbot':
-            message(msg, is_user=False, key=str(i)+'_ai')
+            message('Googling : ' + user[16:], is_user=False, key=str(i)+'_ai')
 
 if __name__ == '__main__':
     main()
